@@ -1,0 +1,46 @@
+{
+  "name": "tauferexpress",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@mantine/core": "^6.0.13",
+    "@mantine/hooks": "^6.0.13",
+    "@stripe/react-stripe-js": "^2.1.1",
+    "@stripe/stripe-js": "^1.54.0",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.40.0",
+    "cookies-next": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "i18next": "^23.4.6",
+    "mongodb": "^5.7.0",
+    "next": "13.2.4",
+    "next-i18next": "^14.0.0",
+    "nodemailer": "^6.9.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-i18next": "^13.2.0",
+    "react-image-gallery": "^1.2.11",
+    "react-slideshow-image": "^4.2.1",
+    "react-to-print": "^2.14.13",
+    "rsuite": "^5.38.0",
+    "stripe": "^12.9.0",
+    "twilio": "^4.19.0",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "postcss": "^8.4.23"
+  }
+}

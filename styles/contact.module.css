@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    padding: 4rem 0 1rem 0;
+    background-color: rgb(167, 122, 122);
+    background-image: url('../assets/contact-bg.jpg');
+}
+
+.container .heading {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: var(--themeWhite);
+    font-weight: 700;
+}
+
+.container .heading:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+}
+
+.mapDetails {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .mapDetails .map {
+    width: 50%;
+}
+
+.container .mapDetails .map iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.container .mapDetails .contactDetails {
+    width: 42%;
+    word-break: break-all;
+}
+
+.container .mapDetails .contactDetails .detailsItem {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container .mapDetails .contactDetails .detailsItem:last-child {
+    border-bottom: 0;
+}
+
+.container .mapDetails .contactDetails .detailsItem .details>span {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    display: block;
+}
+
+.container .mapDetails .contactDetails .detailsItem .details>span:nth-child(2) {
+    color: var(--gray);
+    margin-top: 0.6rem;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+    .container .heading {
+        font-size: 1.5rem;
+    }
+
+    .container .heading:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .mapDetails {
+        width: 100%;
+        margin: 3rem auto;
+        align-items: flex-start;
+    }
+
+    .container .mapDetails .map {
+        width: 90%;
+        order: 2;
+        margin: auto;
+    }
+
+    .container .mapDetails .map iframe {
+        height: 250px;
+    }
+
+    .container .mapDetails .contactDetails {
+        width: 90%;
+        margin: 0 auto 2rem auto;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .container {
+        padding-bottom: 1rem;
+    }
+
+    .container .mapDetails {
+        align-items: flex-start;
+    }
+
+    .container .mapDetails .map iframe {
+        height: 350px;
+    }
+
+    .container .mapDetails .contactDetails {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding-bottom: 1rem;
+    }
+
+    .container .mapDetails .contactDetails {
+        width: 45%;
+    }
+}

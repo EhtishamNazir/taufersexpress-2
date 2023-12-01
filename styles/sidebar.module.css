@@ -1,0 +1,29 @@
+.sidebar {
+    width: 20%;
+    border: 1px solid white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.sidebar ul li>a {
+    display: block;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li>a:hover {
+    background-color: var(--themeOrange);
+    cursor: pointer;
+    color: var(--themeBlack);
+    font-weight: bold;
+}

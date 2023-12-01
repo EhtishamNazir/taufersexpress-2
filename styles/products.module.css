@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+}
+
+.container .tableResponsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.container .tableResponsive table {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.container .tableResponsive table td,
+.container .tableResponsive table th {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container .tableResponsive table td {
+    padding: 0.5rem 1rem;
+}
+.container .tableResponsive table td:nth-child(1) {
+    max-width: 200px;
+}
+
+.container .tableResponsive table .orderDetails {
+    list-style-type: none;
+}
+
+.container .tableResponsive table .editBtn,
+.container .tableResponsive table .deleteBtn {
+    background-color: var(--themeOrange);
+    color: var(--themeBlack);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.container .tableResponsive table .deleteBtn{
+    background-color: var(--themeRed);
+    color: var(--themeWhite);
+    margin-left: 10px;
+}
+
+.container .tableResponsive::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .container .tableResponsive {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container .tableResponsive table {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .container .tableResponsive table td:nth-child(3) {
+        min-width: 100px;
+    }
+    .container .tableResponsive table td:nth-child(2){
+        width: 120px;
+    }
+
+    .container .tableResponsive table td:nth-child(1),
+    .container .tableResponsive table td:last-child {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+    .container .tableResponsive {
+        width: 90%;
+        margin: auto;
+    }
+    .container .tableResponsive table{
+        width: 100%;
+    }
+    .container .tableResponsive table td {
+        padding: 0 1rem;
+    }
+}

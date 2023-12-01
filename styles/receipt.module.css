@@ -1,0 +1,61 @@
+.receipt {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: var(--themeBlack);
+    padding-top: 50px;
+}
+
+.receipt .receiptData {
+    width: 50%;
+    margin: auto;
+    padding: 30px 50px;
+    border: 2px dashed var(--themeBlack);
+}
+
+.brandName {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.1rem;
+}
+
+.receipt .receiptData table {
+    width: 100%;
+}
+
+.receipt .receiptData table td {
+    text-align: center;
+}
+
+.receipt .receiptData table th:nth-child(1),
+.receipt .receiptData table td:nth-child(1) {
+    text-align: left;
+}
+
+.receipt .receiptData .totalAmount {
+    margin: 20px 0 0 0;
+}
+
+.receipt .receiptData .totalAmount span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media print {
+    .receipt {
+        font-size: 14px;
+        /* Other print styles */
+    }
+
+    .receipt .receiptData {
+        width: 70%;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .receipt .receiptData {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

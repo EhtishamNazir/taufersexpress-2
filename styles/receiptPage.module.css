@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.container button {
+    background-color: var(--themeOrange);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 7000;
+    cursor: pointer;
+}

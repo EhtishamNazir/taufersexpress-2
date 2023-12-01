@@ -1,0 +1,193 @@
+.about {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    background-image: url('../assets/story-bg-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about::after {
+    content: "";
+    background: var(--themeOrange);
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container .about .heading {
+    text-align: center;
+    z-index: 100;
+}
+
+.container .about .heading>span {
+    font-size: 2rem;
+    display: block;
+    letter-spacing: 0.1rem;
+}
+
+.container .about .heading>span:nth-child(2) {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.container .story {
+    z-index: 100;
+}
+
+.container .story>p {
+    width: 65%;
+    margin: 2rem auto;
+    font-size: 2rem;
+    color: var(--themeWhite);
+}
+
+.container .philosophy {
+    width: 70%;
+    margin: 5rem auto;
+}
+
+.container .philosophy .heading {
+    text-align: center;
+}
+
+.container .philosophy .heading>span {
+    display: block;
+    letter-spacing: 0.1rem;
+}
+
+.container .philosophy .heading>span:nth-child(1) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--themeWhite);
+}
+
+.container .philosophy .heading>span:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.container .philosophy .team {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.container .philosophy .team .teamItem {
+    width: 30%;
+}
+
+.container .philosophy .team .teamItem>img {
+    width: 100%;
+    height: auto;
+}
+
+.container .philosophy .team .teamItem>span {
+    display: block;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.container .philosophy .team .teamItem>p {
+    color: var(--gray);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        height: 500px;
+    }
+
+    .container .about .heading>span:nth-child(2) {
+        font-size: 3rem;
+    }
+
+    .container .story>p {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+
+    .container .philosophy {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .container .philosophy .heading>span:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .container .philosophy .heading>span:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .container .philosophy .team {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .container .philosophy .team .teamItem {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .container .philosophy .team .teamItem>img {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .container .philosophy .team .teamItem>span {
+        font-size: 1.3rem;
+    }
+
+    .container .philosophy .team .teamItem>p {
+        font-size: 1rem;
+    }
+
+    .container .philosophy .team .teamItem:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .container .story>p {
+        width: 90%;
+    }
+
+    .container .philosophy {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .container .philosophy .team {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .container .philosophy {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .container .philosophy .team {
+        width: 100%;
+    }
+}

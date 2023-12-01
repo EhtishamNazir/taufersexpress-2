@@ -1,0 +1,28 @@
+/* styles/Tabs.module.css */
+
+.tabs {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tabMenu {
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+.tabMenu button {
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.tabMenu button.active {
+    background-color: #e0e0e0;
+}
+
+.tabContent {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}

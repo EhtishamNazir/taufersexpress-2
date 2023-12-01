@@ -1,0 +1,74 @@
+.container {
+    width: 30%;
+    margin: 50px auto;
+}
+
+.container form {
+    width: 100%;
+}
+
+.container .group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.container .group>label {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.container .group .groupInput {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+.container .file {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.container .file label {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--themeOrange);
+    display: table;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.container .file input[type="file"] {
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
+.container .submitBtn .btn {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+    .container {
+        width: 60%;
+    }
+
+    .container .file label {
+        display: block;
+    }
+}
